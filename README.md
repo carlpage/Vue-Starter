@@ -1,7 +1,5 @@
 # VueJS Starter Config
 
-VueJS Starter Config
-
 I built a VueJS starter configuration that no one will likely every use since vue cli does all of this for you. I built this to gain a deeper understanding of Webpack.
 
 ## Building and running on localhost

@@ -1,0 +1,81 @@
+.returning {
+    position: fixed;
+    bottom: 3rem;
+    right: 2rem;
+    opacity: .95;
+    z-index: 100;
+    background-color: #222;
+    padding: .9rem;
+    display: none;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-animation: slideup 1s ease;
+    -moz-animation: slideup 5s ease;
+    animation: slideup 1s ease;
+    animation-name: moveInRight;
+    animation-duration: .75s;
+    transition: all 0.2s ease-in-out 0s;
+
+    a i {
+        color: rgba(255, 255, 255, .3);
+        font-size: 1.33rem;
+    }
+
+    &:hover {
+        background-color: $green;
+
+        i {
+            color: white;
+        }
+    }
+
+    @media(max-width: 865px) {
+        display: none !important;
+    }
+}
+
+.circle {
+    width: rem(60);
+    height: rem(60);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.arrow-first-page {
+    bottom: 0;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    position: absolute;
+    z-index: 2;
+
+    @media(max-width: 767px) {
+        display: none;
+    }
+
+    a {
+        border: 1px solid white;
+        padding: 1rem;
+        transition: .2s ease-in-out;
+
+        &:focus {
+            outline: none;
+            text-decoration: none;
+        }
+
+        &:hover {
+            background-color: $green;
+            color: white;
+            text-decoration: none;
+        }
+
+        i {
+            color: white;
+            font-size: 2rem;
+
+        }
+    }
+}
